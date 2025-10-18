@@ -1,3 +1,4 @@
+
 # Linux-File-IO-Systems-locking
 Ex07-Linux File-IO Systems-locking
 # AIM:
@@ -18,9 +19,13 @@ Write the C Program using Linux IO Systems locking
 Execute the C Program for the desired output. 
 
 # PROGRAM:
+# Name : Aravind P
+
+# Reg No : 212224240015
 
 ## 1.To Write a C program that illustrates files copying 
-```c
+
+```
 include <sys/stat.h>
 #include <fcntl.h>
 #include <stdlib.h>
@@ -33,16 +38,16 @@ in = open("filecopy.c", O_RDONLY);
 out = open("file.out", O_WRONLY|O_CREAT, S_IRUSR|S_IWUSR);
 while((nread = read(in,block,sizeof(block))) > 0)
 write(out,block,nread);
-exit(0);}
+exit(0);
+}
 ```
 
 
 
 
-
-
 ## 2.To Write a C program that illustrates files locking
-```c
+
+```
 #include <fcntl.h>
 #include <stdio.h>
 #include <string.h>
@@ -80,18 +85,15 @@ getchar();
 close (fd);
 return 0;
 }
-
 ```
 
 
-
 ## OUTPUT
-## 1.To Write a C program that illustrates files copying 
 
-![image](https://github.com/user-attachments/assets/acd2dc9c-6b1e-46bb-9bc7-f8b8138a9106)
+<img width="890" height="471" alt="image" src="https://github.com/user-attachments/assets/462d1b9c-1dd0-45c0-9e4d-858669545b15" />
 
-## 2.To Write a C program that illustrates files locking
-![image](https://github.com/user-attachments/assets/e28141d6-03f9-4b7b-a145-dfdb03047cfa)
+<img width="1037" height="823" alt="image" src="https://github.com/user-attachments/assets/5cd81e56-06cd-4e5e-addc-169bf137ca18" />
+
 
 
 
